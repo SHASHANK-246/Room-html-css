@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MoviePlay</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0b0b0b;
+            color: white;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        .navbar {
+            height: 70px;
+            width: 100%;
+
+            background-color: #151515;
+
+            display: flex;
+            align-items: center;
+
+            padding: 0 50px;
+        }
+
+        /* LOGO */
+
+        .logo {
+            color: #ff1744;
+            font-size: 28px;
+            font-weight: bold;
+
+            margin-right: 50px;
+        }
+
+        /* MENU */
+
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #cccccc;
+
+            font-size: 15px;
+        }
+
+        .menu a:hover {
+            color: white;
+        }
+
+        /* SIGN IN */
+
+        .login {
+            margin-left: auto;
+
+            background-color: #ff1744;
+            color: white;
+
+            padding: 10px 22px;
+
+            border-radius: 5px;
+
+            text-decoration: none;
+        }
+
+        .login:hover {
+            background-color: #d50000;
+        }
+
+
+        /* ================= HERO SECTION ================= */
+
+        .hero {
+            height: calc(100vh - 70px);
+
+            display: flex;
+            align-items: center;
+
+            padding-left: 80px;
+
+            /*
+                NEW BACKGROUND IMAGE
+            */
+
+            background-image:
+
+                linear-gradient(
+                    to right,
+                    rgba(0, 0, 0, 0.95),
+                    rgba(0, 0, 0, 0.60),
+                    rgba(0, 0, 0, 0.10)
+                ),
+
+                url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+
+            background-position: center;
+        }
+
+
+        /* ================= MOVIE CONTENT ================= */
+
+        .movie-content {
+            width: 550px;
+        }
+
+        .movie-content h1 {
+            font-size: 68px;
+
+            line-height: 1;
+
+            margin-bottom: 20px;
+        }
+
+        /* MOVIE DETAILS */
+
+        .movie-info {
+            color: #dddddd;
+
+            font-size: 15px;
+
+            margin-bottom: 20px;
+        }
+
+        /* DESCRIPTION */
+
+        .description {
+            color: #dddddd;
+
+            font-size: 18px;
+
+            line-height: 1.6;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* ================= BUTTONS ================= */
+
+        .buttons {
+            display: flex;
+
+            gap: 15px;
+        }
+
+        button {
+            border: none;
+
+            padding: 14px 25px;
+
+            border-radius: 5px;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        /* PLAY BUTTON */
+
+        .play {
+            background-color: white;
+
+            color: black;
+        }
+
+        .play:hover {
+            background-color: #dddddd;
+        }
+
+        /* MORE INFO BUTTON */
+
+        .more {
+            background-color: #555555;
+
+            color: white;
+        }
+
+        .more:hover {
+            background-color: #777777;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                padding: 0 20px;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .logo {
+                font-size: 23px;
+            }
+
+            .hero {
+                padding: 30px;
+            }
+
+            .movie-content {
+                width: 100%;
+            }
+
+            .movie-content h1 {
+                font-size: 48px;
+            }
+
+            .description {
+                font-size: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            MoviePlay
+        </div>
+
+
+        <div class="menu">
+
+            <a href="#">Home</a>
+
+            <a href="#">TV Shows</a>
+
+            <a href="#">Movies</a>
+
+            <a href="#">Trending</a>
+
+            <a href="#">My List</a>
+
+        </div>
+
+
+        <a href="#" class="login">
+            Sign In
+        </a>
+
+    </nav>
+
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+
+        <div class="movie-content">
+
+
+            <h1>
+                Room<br>
+                Rental
+            </h1>
+
+
+            <div class="movie-info">
+
+                ⭐ 8.7
+                &nbsp; | &nbsp;
+                2026
+                &nbsp; | &nbsp;
+                16+
+
+            </div>
+
+
+            <p class="description">
+
+                A mysterious journey begins when a young explorer
+                discovers a hidden world beyond the mountains.
+                Secrets from the past slowly begin to reveal
+                themselves.
+
+            </p>
+
+
+            <div class="buttons">
+
+
+                <button class="play">
+
+                    ▶ Play
+
+                </button>
+
+
+                <button class="more">
+
+                    ⓘ More Info
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>
